@@ -1,0 +1,10 @@
+{
+  "name": "open-source-ai-developer-toolkit",
+  "description": "An open-source Claude Code developer toolkit for code review, debugging, security, testing, documentation, GitHub workflows, cloud preparation, resumes, and interviews.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Rikita Shil"
+  },
+  "repository": "https://github.com/Rikita-Shil/open-source-ai-developer-toolkit",
+  "license": "MIT"
+}
