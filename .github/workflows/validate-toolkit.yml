@@ -1,0 +1,79 @@
+name: Validate Toolkit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate JSON metadata files
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          files = list(Path("skills").rglob("metadata.json"))
+
+          if not files:
+              raise SystemExit("No metadata.json files found.")
+
+          for path in files:
+              with path.open(encoding="utf-8") as file:
+                  json.load(file)
+              print(f"Valid JSON: {path}")
+          PY
+
+      - name: Validate module structure
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          required_files = {
+              "SKILL.md",
+              "CHECKLIST.md",
+              "examples.md",
+              "metadata.json",
+          }
+
+          module_dirs = [
+              path.parent
+              for path in Path("skills").rglob("metadata.json")
+          ]
+
+          if not module_dirs:
+              raise SystemExit("No developer modules found.")
+
+          errors = []
+
+          for module_dir in module_dirs:
+              existing_files = {
+                  path.name
+                  for path in module_dir.iterdir()
+                  if path.is_file()
+              }
+
+              missing = required_files - existing_files
+
+              if missing:
+                  errors.append(
+                      f"{module_dir}: missing {', '.join(sorted(missing))}"
+                  )
+              else:
+                  print(f"Valid module: {module_dir}")
+
+          if errors:
+              raise SystemExit("\n".join(errors))
+          PY
