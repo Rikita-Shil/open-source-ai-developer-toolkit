@@ -1,4 +1,10 @@
 # 🚀 Open Source AI Developer Toolkit
+[![Validate Toolkit](https://github.com/Rikita-Shil/open-source-ai-developer-toolkit/actions/workflows/validate-toolkit.yml/badge.svg)](https://github.com/Rikita-Shil/open-source-ai-developer-toolkit/actions/workflows/validate-toolkit.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![Developer Modules](https://img.shields.io/badge/modules-6-brightgreen.svg)
+![Documentation](https://img.shields.io/badge/documentation-available-success.svg)
+![Open Source](https://img.shields.io/badge/open%20source-yes-orange.svg)
 
 An open-source toolkit of reusable AI developer modules designed to help students, junior developers, and software engineers build better software.
 
