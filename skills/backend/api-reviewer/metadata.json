@@ -1,0 +1,14 @@
+{
+  "name": "API Reviewer",
+  "category": "Backend",
+  "version": "1.0.0",
+  "author": "Rikita Shil",
+  "difficulty": "Intermediate",
+  "tags": [
+    "REST",
+    "HTTP",
+    "Backend",
+    "API",
+    "Code Review"
+  ]
+}
