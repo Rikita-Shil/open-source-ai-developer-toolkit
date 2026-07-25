@@ -167,3 +167,47 @@ This project aims to:
 The long-term vision is to build an open-source collection of AI-powered developer modules covering software engineering, cloud computing, security, documentation, career preparation, and university learning.
 
 Future versions may support multiple AI coding assistants while keeping a consistent module structure.
+
+
+# Performance Analyzer
+
+## Overview
+
+Performance Analyzer reviews applications for inefficient code, memory usage, algorithm complexity, database bottlenecks, and scalability issues.
+
+It helps developers identify opportunities to improve execution speed, responsiveness, and resource usage before deployment.
+
+## What it Reviews
+
+- Algorithm complexity
+- Loops and recursion
+- Memory usage
+- Database queries
+- Network requests
+- API performance
+- Frontend rendering
+- Caching
+- Concurrency
+- Scalability
+
+## Supported Technologies
+
+- Java
+- Python
+- JavaScript
+- TypeScript
+- Node.js
+- React
+- SvelteKit
+- Express
+- Spring Boot
+- FastAPI
+
+## Expected Output
+
+- Performance score
+- Bottlenecks
+- Optimization opportunities
+- Best-practice recommendations
+- Scalability assessment
+
