@@ -1,43 +1,23 @@
-#!/usr/bin/env python3
+missing = required_fields - metadata.keys()
 
-import json
-from pathlib import Path
+if missing:
+    errors.append(
+        f"{metadata_file}: missing {', '.join(sorted(missing))}"
+    )
+    continue
 
-SKILLS_DIR = Path("skills")
-
-required_fields = {
-    "name",
-    "category",
-    "version",
-    "author",
-    "difficulty",
+valid_difficulties = {
+    "Beginner",
+    "Intermediate",
+    "Advanced",
 }
 
-errors = []
+difficulty = metadata.get("difficulty")
 
-for metadata_file in SKILLS_DIR.rglob("metadata.json"):
-    try:
-        with metadata_file.open(encoding="utf-8") as file:
-            metadata = json.load(file)
+if difficulty not in valid_difficulties:
+    errors.append(
+        f"{metadata_file}: invalid difficulty '{difficulty}'"
+    )
+    continue
 
-        missing = required_fields - metadata.keys()
-
-        if missing:
-            errors.append(
-                f"{metadata_file}: missing {', '.join(sorted(missing))}"
-            )
-        else:
-            print(f"✓ {metadata_file}")
-
-    except json.JSONDecodeError as error:
-        errors.append(f"{metadata_file}: invalid JSON ({error})")
-
-if errors:
-    print("\nValidation failed:")
-
-    for error in errors:
-        print(f"✗ {error}")
-
-    raise SystemExit(1)
-
-print("\nAll module metadata files passed validation.")
+print(f"✓ {metadata_file}")
