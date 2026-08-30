@@ -10,4 +10,8 @@ echo "Running module structure validation..."
 ./scripts/check-module-structure.py
 
 echo ""
+echo "Checking for empty module files..."
+./scripts/check-empty-files.py
+
+echo ""
 echo "✓ All toolkit validation checks passed."
