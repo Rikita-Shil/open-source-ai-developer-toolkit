@@ -14,4 +14,8 @@ echo "Checking for empty module files..."
 ./scripts/check-empty-files.py
 
 echo ""
+echo "Running metadata tag validation..."
+./scripts/check-metadata-tags.py
+
+echo ""
 echo "✓ All toolkit validation checks passed."
