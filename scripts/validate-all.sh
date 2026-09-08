@@ -18,4 +18,8 @@ echo "Running metadata tag validation..."
 ./scripts/check-metadata-tags.py
 
 echo ""
+echo "Checking for duplicate module names..."
+./scripts/check-duplicate-modules.py
+
+echo ""
 echo "✓ All toolkit validation checks passed."
