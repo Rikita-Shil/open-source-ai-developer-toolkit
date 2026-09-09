@@ -22,4 +22,8 @@ echo "Checking for duplicate module names..."
 ./scripts/check-duplicate-modules.py
 
 echo ""
+echo ""
+echo "Running module version validation..."
+./scripts/check-module-versions.py
+
 echo "✓ All toolkit validation checks passed."
