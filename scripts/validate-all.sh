@@ -26,4 +26,8 @@ echo ""
 echo "Running module version validation..."
 ./scripts/check-module-versions.py
 
+echo ""
+echo "Running module category validation..."
+./scripts/check-module-categories.py
+
 echo "✓ All toolkit validation checks passed."
