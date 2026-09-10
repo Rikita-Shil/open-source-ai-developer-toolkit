@@ -1,0 +1,12 @@
+{
+  "name": "Code Review Pro",
+  "category": "Software Engineering",
+  "version": "1.0.0",
+  "author": "Rikita Shil",
+  "difficulty": "Intermediate",
+  "tags": [
+    "Code Review",
+    "Maintainability",
+    "Quality"
+  ]
+}
