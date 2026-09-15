@@ -30,4 +30,8 @@ echo ""
 echo "Running module category validation..."
 ./scripts/check-module-categories.py
 
+echo ""
+echo "Running module README validation..."
+./scripts/check-module-readmes.py
+
 echo "✓ All toolkit validation checks passed."
