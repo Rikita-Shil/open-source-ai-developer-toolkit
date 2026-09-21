@@ -1,213 +1,364 @@
 # 🚀 Open Source AI Developer Toolkit
+
 [![Validate Toolkit](https://github.com/Rikita-Shil/open-source-ai-developer-toolkit/actions/workflows/validate-toolkit.yml/badge.svg)](https://github.com/Rikita-Shil/open-source-ai-developer-toolkit/actions/workflows/validate-toolkit.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Version](https://img.shields.io/badge/version-0.1.0-blue.svg)
-![Developer Modules](https://img.shields.io/badge/modules-6-brightgreen.svg)
-![Documentation](https://img.shields.io/badge/documentation-available-success.svg)
+![Developer Modules](https://img.shields.io/badge/modules-8-brightgreen.svg)
 ![Open Source](https://img.shields.io/badge/open%20source-yes-orange.svg)
 
-An open-source toolkit of reusable AI developer modules designed to help students, junior developers, and software engineers build better software.
+A growing open-source collection of reusable AI-assisted developer modules for software engineering, security, backend development, code quality, and developer workflows.
 
-The project provides structured modules for:
-
-- 💻 Software Engineering
-- 🔒 Security
-- ☁️ Cloud & DevOps
-- 🎓 University Projects
-- 💼 Career Development
-
-Each module follows a consistent architecture including documentation, examples, metadata, and quality checklists.
+The toolkit is designed to help students, junior developers, contributors, and software engineers follow structured development practices when working with AI coding tools.
 
 ---
 
-## ✨ Why this project?
+## ✨ Why This Project?
 
-Modern AI coding assistants are incredibly powerful, but developers often repeat the same workflows.
+AI coding assistants can help developers work faster, but many development tasks still require consistent processes for reviewing, testing, debugging, securing, and maintaining code.
 
-This toolkit packages those workflows into reusable modules that encourage:
+The Open Source AI Developer Toolkit turns these recurring workflows into structured and reusable modules.
 
-- Better code quality
-- Safer GitHub repositories
-- Consistent documentation
-- Practical testing
-- Secure development
-- Maintainable software
+The project focuses on:
 
-The long-term goal is to build a community-driven collection of developer-focused AI modules that anyone can use and improve.
+- 💻 Software engineering
+- 🔒 Security
+- ⚙️ Backend development
+- 🧪 Testing and debugging
+- 📈 Performance and maintainability
+- 📚 Developer documentation
+- 🤝 Open-source development
 
+The long-term goal is to create a community-driven toolkit of practical AI-assisted development workflows that can be reused across different projects and technologies.
 
+---
 
 ## ✨ Features
 
-- Modular AI developer modules
-- Structured project documentation
-- Security review workflows
-- Code review assistance
-- Debugging support
+- Modular developer workflows
+- Standardized module architecture
+- Code review guidance
+- Debugging workflows
 - Test generation
-- GitHub readiness checks
+- Security auditing
+- Performance analysis
+- API review
 - Refactoring guidance
-- Open-source contribution friendly
-- Beginner-friendly explanations
-  
-  ## 📂 Project Structure
+- GitHub repository readiness checks
+- Module metadata
+- Quality checklists
+- Example inputs and outputs
+- Automated validation scripts
+- GitHub Actions validation
+- Open-source contribution support
+
+---
+
+## 📂 Project Structure
 
 ```text
 open-source-ai-developer-toolkit/
 │
 ├── .claude-plugin/
+├── .github/
+│   └── workflows/
+│
 ├── docs/
 ├── examples/
+├── schemas/
+├── scripts/
+│
 ├── skills/
 │   ├── software-engineering/
-│   ├── security/
-│   ├── cloud/
-│   ├── career/
-│   └── university/
+│   ├── backend/
+│   └── security/
 │
 ├── templates/
-├── .github/
+├── CONTRIBUTING.md
+├── LICENSE
 ├── README.md
-└── LICENSE
+└── ROADMAP.md
 ```
+
+The repository is designed so that additional categories can be introduced as the toolkit grows.
+
+---
 
 ## 🧩 Current Developer Modules
 
-### Software Engineering
+### 💻 Software Engineering
 
 - ✅ Code Review Pro
 - ✅ Debug Detective
 - ✅ Test Generator
 - ✅ GitHub Ready
+- ✅ Performance Analyzer
 - 🚧 Refactor Assistant
 
-### Security
+### ⚙️ Backend
+
+- ✅ API Reviewer
+
+### 🔒 Security
 
 - ✅ Security Auditor
-- 🚧 Secret Scanner
-- 🚧 Dependency Reviewer
 
-### Cloud
+---
 
-- 🚧 AWS Coach
-- 🚧 Docker Reviewer
-- 🚧 Kubernetes Assistant
+## 🧱 Standard Module Architecture
 
-### Career
+Each developer module follows a consistent structure:
 
-- 🚧 Resume Optimizer
-- 🚧 Interview Coach
+```text
+module-name/
+├── README.md
+├── SKILL.md
+├── CHECKLIST.md
+├── examples.md
+├── sample-input.md
+└── metadata.json
+```
 
-### University
+### `README.md`
 
-- 🚧 Assignment Reviewer
-- 🚧 UML Assistant
-- 🚧 Project Planner
-## 🗺 Roadmap
+Provides an introduction to the module, its purpose, capabilities, and usage.
 
-### Version 0.1
+### `SKILL.md`
 
-- Repository foundation
-- Core documentation
-- Initial developer modules
+Defines the module's main behaviour and instructions.
 
-### Version 0.2
+### `CHECKLIST.md`
 
-- Cloud modules
-- Career modules
-- University modules
+Provides a structured checklist for reviewing the relevant code or workflow.
 
-### Version 0.5
+### `examples.md`
 
-- GitHub Actions
-- Examples
-- Community templates
+Contains examples demonstrating how the module can be used.
 
-### Version 1.0
+### `sample-input.md`
 
-- Stable toolkit
-- Complete documentation
-- Community contributions
+Provides realistic sample input for testing and demonstrating the module.
 
-## 📊 Project Status
+### `metadata.json`
 
-| Item | Status |
-|------|--------|
-| Documentation | ✅ In Progress |
-| Developer Modules | ✅ Growing |
-| Examples | 🚧 Planned |
-| GitHub Actions | 🚧 Planned |
-| Releases | 🚧 Planned |
-| Community Contributions | 🚧 Planned |
+Stores structured module information such as:
+
+- Module name
+- Category
+- Version
+- Author
+- Difficulty
+- Tags
+
+This consistent architecture makes modules easier to understand, validate, maintain, and extend.
+
+---
+
+## 🔍 Toolkit Validation
+
+The project includes validation scripts to maintain consistency across modules.
+
+Validation covers areas such as:
+
+- Module metadata
+- Required module files
+- Empty required files
+- Metadata tags
+- Module names
+- Module versions
+- Module categories
+- Duplicate module names
+- README requirements
+- Checklist requirements
+
+The complete validation suite can be run with:
+
+```bash
+./scripts/validate-all.sh
+```
+
+Individual validators are available inside:
+
+```text
+scripts/
+```
+
+---
+
+## 🤖 Continuous Integration
+
+GitHub Actions is used to automatically validate the toolkit when repository changes are pushed.
+
+The validation workflow helps detect structural or metadata problems before changes are merged.
+
+This provides an additional quality-control layer as the number of modules grows.
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Rikita-Shil/open-source-ai-developer-toolkit.git
+```
+
+Enter the project:
+
+```bash
+cd open-source-ai-developer-toolkit
+```
+
+Run the validation suite:
+
+```bash
+./scripts/validate-all.sh
+```
+
+You can then explore the available modules inside:
+
+```text
+skills/
+```
+
+---
 
 ## 🎯 Design Principles
 
-Every module in this toolkit follows the same standards.
+Modules in this toolkit aim to be:
 
-- Modular
-- Beginner Friendly
-- Well Documented
-- Practical
-- Open Source
-- Framework Aware
-- Safe by Default
-- Reusable
+- **Modular** — each module focuses on a specific development task.
+- **Practical** — guidance should be usable on real projects.
+- **Beginner-friendly** — instructions should be understandable without unnecessary complexity.
+- **Well documented** — modules include documentation and examples.
+- **Reusable** — workflows should work across multiple projects.
+- **Maintainable** — modules follow a predictable structure.
+- **Safe by default** — security and quality considerations are built into the workflow.
+- **Open source** — modules can be improved through community contributions.
+
+---
+
+## 🗺️ Roadmap
+
+### Version 0.1 — Foundation
+
+- [x] Repository foundation
+- [x] Core documentation
+- [x] Initial software engineering modules
+- [x] Security module
+- [x] Backend API review module
+- [x] Module metadata
+- [x] Validation tooling
+- [x] GitHub Actions validation
+
+### Version 0.2 — Expansion
+
+- [ ] Expand existing modules
+- [ ] Add more backend modules
+- [ ] Introduce cloud and DevOps modules
+- [ ] Add additional security workflows
+- [ ] Improve module examples
+- [ ] Expand automated validation
+
+### Version 0.5 — Ecosystem
+
+- [ ] Reusable module templates
+- [ ] Expanded CI checks
+- [ ] More example projects
+- [ ] Community module submissions
+- [ ] Improved contributor tooling
+
+### Version 1.0 — Stable Toolkit
+
+- [ ] Stable module specification
+- [ ] Complete contributor documentation
+- [ ] Mature validation system
+- [ ] Expanded module library
+- [ ] Stable release
+
+---
+
+## 📊 Project Status
+
+| Area | Status |
+|---|---|
+| Core Documentation | 🟢 Active |
+| Software Engineering Modules | 🟢 Active |
+| Security Modules | 🟢 Active |
+| Backend Modules | 🟢 Active |
+| Validation Scripts | 🟢 Active |
+| GitHub Actions | 🟢 Active |
+| Cloud Modules | 🟡 Planned |
+| Career Modules | 🟡 Planned |
+| University Modules | 🟡 Planned |
+| Community Contributions | 🟡 Planned |
+| Stable Release | 🟡 Planned |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+You can contribute by:
+
+- Improving an existing module
+- Adding examples
+- Fixing documentation
+- Improving validation tooling
+- Reporting bugs
+- Suggesting new modules
+- Creating a new developer module
+
+Before submitting changes, run:
+
+```bash
+./scripts/validate-all.sh
+```
+
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for contribution guidelines.
+
+---
+
 ## 🎯 Project Goals
 
 This project aims to:
 
-- Improve software engineering workflows with AI.
-- Encourage secure coding practices.
-- Help students build stronger GitHub portfolios.
-- Promote reusable AI-assisted development patterns.
-- Welcome community contributions.
+1. Improve AI-assisted software engineering workflows.
+2. Encourage secure and maintainable coding practices.
+3. Provide reusable development workflows.
+4. Help developers learn structured engineering practices.
+5. Build a growing open-source library of developer-focused AI modules.
+
+---
 
 ## 🌍 Future Vision
 
-The long-term vision is to build an open-source collection of AI-powered developer modules covering software engineering, cloud computing, security, documentation, career preparation, and university learning.
+The long-term vision is to build a broader ecosystem of reusable AI developer modules covering areas such as:
 
-Future versions may support multiple AI coding assistants while keeping a consistent module structure.
+- Software engineering
+- Backend development
+- Security
+- Cloud and DevOps
+- Testing
+- Documentation
+- AI development
+- Career preparation
+- University software projects
 
+Future versions may support multiple AI coding assistants while maintaining a consistent module specification across the toolkit.
 
-# Performance Analyzer
+---
 
-## Overview
+## 📄 License
 
-Performance Analyzer reviews applications for inefficient code, memory usage, algorithm complexity, database bottlenecks, and scalability issues.
+This project is licensed under the MIT License.
 
-It helps developers identify opportunities to improve execution speed, responsiveness, and resource usage before deployment.
+See [`LICENSE`](LICENSE) for details.
 
-## What it Reviews
+---
 
-- Algorithm complexity
-- Loops and recursion
-- Memory usage
-- Database queries
-- Network requests
-- API performance
-- Frontend rendering
-- Caching
-- Concurrency
-- Scalability
+## ⭐ Support the Project
 
-## Supported Technologies
+If you find the toolkit useful, consider starring the repository.
 
-- Java
-- Python
-- JavaScript
-- TypeScript
-- Node.js
-- React
-- SvelteKit
-- Express
-- Spring Boot
-- FastAPI
-
-## Expected Output
-
-- Performance score
-- Bottlenecks
-- Optimization opportunities
-- Best-practice recommendations
-- Scalability assessment
-
+Feedback, issues, ideas, and contributions are welcome as the project continues to grow.
