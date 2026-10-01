@@ -362,3 +362,28 @@ See [`LICENSE`](LICENSE) for details.
 If you find the toolkit useful, consider starring the repository.
 
 Feedback, issues, ideas, and contributions are welcome as the project continues to grow.
+
+---
+
+## 📊 Toolkit Summary Utility
+
+The toolkit includes a command-line utility for quickly viewing the current repository structure.
+
+### View the full summary
+
+    ./scripts/toolkit-summary.py
+
+The utility displays the number of available modules and categories.
+
+### View categories only
+
+    ./scripts/toolkit-summary.py --categories-only
+
+Current categories include:
+
+- Backend
+- Security
+- Software Engineering
+
+The summary utility automatically discovers modules from the `skills/` directory, making it easier to track the toolkit as new modules are added.
+
